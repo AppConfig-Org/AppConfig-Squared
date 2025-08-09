@@ -229,7 +229,7 @@ We welcome contributions from the community! Whether you're reporting bugs, sugg
 
 ## 📄 License
 
-This project is proprietary software. All rights reserved. See [LICENSE](./License.md) for details.
+This project is proprietary software. All rights reserved. See [LICENSE](./LICENSE) for details.
 
 ---
 
