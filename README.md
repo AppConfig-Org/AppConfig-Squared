@@ -45,7 +45,7 @@ AppConfig² is a specialized web application designed for developers, IT adminis
 <td align="center" width="25%">
 <img src="https://img.icons8.com/fluency/48/administrator-male.png" alt="Admins"/>
 <br/><strong>IT Administrators</strong>
-<br/>Efficiently test and configure app registrations in hybrid/cloud environments
+<br/>Test and configure app registrations in hybrid/cloud environments
 </td>
 <td align="center" width="25%">
 <img src="https://img.icons8.com/fluency/48/security-shield-green.png" alt="Security"/>
