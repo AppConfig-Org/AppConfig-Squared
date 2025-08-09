@@ -1,6 +1,6 @@
 AppConfig² Software License Agreement
 
-Copyright (c) 2024 AppConfig² / Tonino Filipovic. All Rights Reserved.
+Copyright (c) 2025 AppConfig². All Rights Reserved.
 
 IMPORTANT: READ CAREFULLY BEFORE USING THIS SOFTWARE
 
