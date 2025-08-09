@@ -50,7 +50,7 @@ AppConfig² is a specialized web application designed for developers, IT adminis
 <td align="center" width="25%">
 <img src="https://img.icons8.com/fluency/48/security-shield-green.png" alt="Security"/>
 <br/><strong>Security Engineers</strong>
-<br/>Verify app configurations against security best practices
+<br/>Verify applications' configuration against security best practices
 </td>
 </tr>
 </table>
