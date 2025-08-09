@@ -188,7 +188,6 @@ This comprehensive guide covers all features available in AppConfig², organized
 ## 🚀 Upcoming Features
 
 ### Roadmap Preview
-- **Multi-Tenant Management** - Manage applications across multiple tenants
 - **Advanced Analytics** - Machine learning-powered insights and recommendations
 - **Mobile Application** - Native mobile app for on-the-go management
 - **Advanced Automation** - Workflow automation and orchestration capabilities
