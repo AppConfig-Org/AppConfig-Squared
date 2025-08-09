@@ -7,13 +7,12 @@ This comprehensive guide covers all features available in AppConfig², organized
 ### Application Overview
 - **Real-time Statistics** - Live count of applications, users, and configurations
 - **Quick Actions** - Fast access to most common tasks
-- **Recent Activity** - Track recent configuration changes and tests
 - **Application Filtering** - Filter apps by type (SPA, Web, API), status, and permissions
 
 ### Smart Navigation
 - **Contextual Sidebar** - Dynamic navigation based on selected application
 - **Breadcrumb Navigation** - Always know where you are in the application
-- **Quick Search** - Find applications, users, and configurations instantly
+- **Quick Search** - Find applications instantly by various search criteria
 
 ## 🔧 Application Management
 
@@ -26,12 +25,11 @@ This comprehensive guide covers all features available in AppConfig², organized
 ### Application Configuration
 - **General Settings** - Basic app information and metadata
 - **Platform Configurations** - Redirect URIs, logout URLs, and platform-specific settings
-- **Branding** - Application logos, terms of service, and privacy policy URLs
-- **Advanced Settings** - Token configuration, implicit flow settings, and more
+- **Advanced Settings** - Token configuration, API permissions, scopes, and more
 
 ### App Roles Management
 - **Dynamic Role Creation** - Add custom roles with descriptions and allowed member types
-- **Role Assignment** - Assign roles to users and groups
+- **Role Assignment** - Assign roles to users 
 - **Permission Mapping** - Map roles to application permissions
 - **Best Practice Validation** - Guidance on role definition and security patterns
 
