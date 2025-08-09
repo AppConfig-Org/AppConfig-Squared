@@ -236,7 +236,6 @@ This project is proprietary software. All rights reserved. See [LICENSE](./LICEN
 ## 🙏 Acknowledgments
 
 - **Microsoft** for the comprehensive Entra ID and Graph API ecosystem
-- **Themefisher** for the website design foundation
 - **Early Access Users** for valuable feedback and testing
 
 ---
