@@ -103,4 +103,4 @@ LinkedIn: https://www.linkedin.com/company/appconfig-square/
 
 BY USING THE SOFTWARE, YOU ACKNOWLEDGE THAT YOU HAVE READ THIS AGREEMENT, UNDERSTAND IT, AND AGREE TO BE BOUND BY ITS TERMS AND CONDITIONS.
 
-Last Updated: January 2024
+Last Updated: August 2025
