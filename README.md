@@ -243,7 +243,7 @@ This project is proprietary software. All rights reserved. See [LICENSE](./LICEN
 
 <div align="center">
   <h3>🚀 Ready to Transform Your Entra ID Management?</h3>
-  <p>Join thousands of professionals who trust AppConfig² for their identity management needs.</p>
+  <p>Join professionals who trust AppConfig² for their identity management needs.</p>
   
   <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=KpDK7BEFckufqeOwyvweCVTykKo0P21GpY7N2jlgh7xUNFExRVRDSVoxTlMxNVM3V0dFUkUyTDQ5UC4u">
     <img src="https://img.shields.io/badge/Get%20Early%20Access-Free%20Trial-orange?style=for-the-badge&logo=microsoft" alt="Get Early Access"/>
