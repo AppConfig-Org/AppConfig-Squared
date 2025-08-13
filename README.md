@@ -197,9 +197,8 @@ Read our [SECURITY.md](./SECURITY.md) for complete security documentation.
 ## 📚 Documentation
 
 - **[Features Guide](./FEATURES.md)** - Comprehensive feature documentation
-- **[Architecture Overview](./ARCHITECTURE.md)** - Technical architecture details
-- **[Security Guidelines](./SECURITY.md)** - Security considerations and best practices
-- **[Contributing Guide](./CONTRIBUTING.md)** - How to contribute to the project
+- **[Architecture Overview](./Architecture Overview.md)** - Technical architecture details
+- **[Feature Request](./Feature Request.md)** - How to contribute to the project
 
 ---
 
