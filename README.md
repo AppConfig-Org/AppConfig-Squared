@@ -188,7 +188,6 @@ AppConfig² follows enterprise security best practices:
 - **🔐 Zero Secrets Storage** - No application secrets or credentials stored
 - **🎫 Token-Based Access** - All operations use delegated permissions
 - **🛡️ Principle of Least Privilege** - Minimal required permissions only
-- **📋 Audit Trail** - Comprehensive logging of all configuration changes
 - **🔄 Automatic Backups** - Safety nets for all modifications
 
 Read our [SECURITY.md](./SECURITY.md) for complete security documentation.
