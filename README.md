@@ -179,8 +179,6 @@ AppConfig² is built using modern web technologies optimized for enterprise iden
 - **State Management**: React Context with custom hooks
 - **Security**: OAuth 2.0 / OpenID Connect compliant
 
-See [ARCHITECTURE.md](./ARCHITECTURE.md) for detailed technical documentation.
-
 ---
 
 ## 🔒 Security & Compliance
