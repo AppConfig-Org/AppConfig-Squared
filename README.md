@@ -119,8 +119,8 @@ graph LR
     C --> E[📊 Configure & Test]
     D --> F[📊 Analyze & Test]
     E --> G[⏪ Backup & Restore]
-    F --> G
-    G --> H[📈 Monitor & Report]
+    F --> H[📈 Monitor & Report]
+    G --> H
     
     style A fill:#e1f5fe
     style B fill:#f3e5f5
