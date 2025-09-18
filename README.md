@@ -119,7 +119,7 @@ flowchart LR
     subgraph S[ ]
       direction TB
       D[🔍 AppTesting - Read-Only]
-      C[🔧 AppConfig - Full Management]
+      C[🔧 AppConfig - Manage/Backup]
     end
     style S fill:transparent,stroke:transparent
 
@@ -129,7 +129,7 @@ flowchart LR
     %% Paths
     D --> F[📊 Analyze & Test]
     C --> E[📊 Configure & Test]
-    E --> G[⏪ Backup & Restore]
+    E --> G[⏪ Restore]
     F --> H[📈 Monitor & Report]
     G --> H
 
