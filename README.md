@@ -274,11 +274,10 @@ This project is proprietary software. All rights reserved. See [LICENSE](./LICEN
 ---
 
 <div align="center">
-  <h3>🚀 Ready to Transform Your Entra ID Management?</h3>
-  <p>Choose the right tool for your organization's needs and compliance requirements.</p>
-  
-  <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=KpDK7BEFckufqeOwyvweCVTykKo0P21GpY7N2jlgh7xUNFExRVRDSVoxTlMxNVM3V0dFUkUyTDQ5UC4u">
-    <img src="https://img.shields.io/badge/Get%20Early%20Access-Complete%20Suite-orange?style=for-the-badge&logo=microsoft" alt="Get Early Access"/>
+  <h3>🚀 Get it on Azure Marketplace</h3>
+  <p>Deploy AppConfig² Suite with Azure-native billing and compliance.</p>
+  <a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps?search=AppConfig%C2%B2&page=1">
+    <img src="https://img.shields.io/badge/Get%20it%20on-Azure%20Marketplace-0078D4?style=for-the-badge&logo=microsoft-azure" alt="Get it on Azure Marketplace"/>
   </a>
 </div>
 
