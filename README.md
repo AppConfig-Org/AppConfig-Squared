@@ -185,14 +185,6 @@ flowchart LR
 4. Explore the enhanced dashboard and portfolio insights
 5. Start testing with comprehensive toolkit
 
-### Early Access Program 🎉
-The complete **AppConfig² Suite** is currently in **Early Access**:
-- ✅ Full access to both AppConfig and AppTesting tools
-- ✅ Enhanced dashboard and portfolio management
-- ✅ Advanced security and lifecycle analysis
-- ✅ Priority support and direct feedback channel
-- ✅ Influence future development of the suite
-
 ---
 
 ## 🏗️ Technical Architecture
