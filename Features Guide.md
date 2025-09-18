@@ -13,7 +13,7 @@ This comprehensive guide covers all features available in the AppConfig² Suite,
 
 ### Intelligent Application Management
 - **Multi-View Dashboard** - Switch between portfolio overview and detailed application views
-- **Advanced Filtering** - Filter applications by type, security posture, ownership, and compliance status
+- **Advanced Filtering** - Filter applications by type, security posture, ownership, and tenant type
 - **Quick Actions** - Contextual actions available directly from dashboard cards
 - **Real-Time Data** - Live application counts and status updates with optimized caching
 
@@ -25,6 +25,8 @@ This comprehensive guide covers all features available in the AppConfig² Suite,
 - **User Provisioning** - Bulk and individual user provisioning with role assignment
 - **Credential Management** - Client secret and certificate generation with expiration tracking
 - **Backup & Restore** - Automatic configuration backups with one-click restoration
+- **Delete Application** - Securely delete applications when no longer needed
+- **Restore Deleted Application** - Recover deleted applications to minimize accidental loss
 
 ### Advanced Configuration Features
 - **App Roles Management** - Dynamic role creation with permission mapping
@@ -32,12 +34,6 @@ This comprehensive guide covers all features available in the AppConfig² Suite,
 - **Claims Mapping Policies** - Visual policy editor with template library
 - **Directory Extensions** - Custom attribute creation and schema management
 - **Manifest Editor** - Direct application manifest editing with validation
-
-### Safety & Compliance Features
-- **Automatic Backups** - Every configuration change automatically backed up
-- **Change Tracking** - Detailed audit logs of all modifications
-- **Rollback Capabilities** - Point-in-time restoration to any previous state
-- **Risk Assessment** - Pre-change impact analysis and warnings
 
 ## 🔍 AppTesting - Read-Only Analysis Tool
 
@@ -50,7 +46,6 @@ This comprehensive guide covers all features available in the AppConfig² Suite,
 
 ### Compliance-Ready Operation
 - **Zero Modification Risk** - All configuration change functions disabled
-- **Audit Trail** - Complete logging of all read-only operations
 - **Policy Compliance** - Designed for organizations requiring change control
 - **Safe Exploration** - Explore configurations without modification capabilities
 
@@ -58,7 +53,6 @@ This comprehensive guide covers all features available in the AppConfig² Suite,
 - **Conditional Access Insights** - View applied policies and their impact
 - **Service Principal Analysis** - Comprehensive service principal information
 - **Permission Risk Scoring** - Automated risk assessment of application permissions
-- **Integration Testing** - Test integrations without modifying configurations
 
 ## 🌟 Shared Capabilities (Both Tools)
 
@@ -72,13 +66,11 @@ This comprehensive guide covers all features available in the AppConfig² Suite,
 - **Attack Surface Analysis** - Comprehensive vulnerability assessment and attack vector identification
 - **Permission Analysis** - Detailed API permission review with risk scoring
 - **Security Scorecard** - Overall security posture with actionable recommendations
-- **Compliance Checking** - Automated compliance verification against security standards
 
 ### Application Lifecycle Tracking
 - **Creation Tracking** - Monitor when and how applications were created
 - **Ownership Management** - Track application owners and management responsibilities
-- **Change History** - Complete audit trail of configuration changes
-- **Usage Analytics** - Application usage patterns and authentication metrics
+- **Quick Statistics** - View number of owners, API Permissions, Redirect URIs and App Roles
 
 ### Testing & Authentication
 - **Multi-Flow Support** - Authorization Code, Implicit, Client Credentials, and hybrid flows
@@ -89,48 +81,17 @@ This comprehensive guide covers all features available in the AppConfig² Suite,
 ### Graph Integration & Tools
 - **Embedded Graph Explorer** - Full Microsoft Graph API console integration
 - **Request Templates** - Pre-built queries for common scenarios
-- **Batch Operations** - Execute multiple Graph API calls efficiently
-- **Response Analysis** - Advanced response formatting and analysis tools
+- **Batch Operations** - Execute Graph API calls efficiently (limited to GET method in AppTesting)
 
-## 📊 Analytics & Reporting
+## 📊 Reporting
 
-### Portfolio Analytics
-- **Application Metrics** - Track application counts by type, security status, and compliance
-- **Usage Analytics** - Monitor authentication patterns and application adoption
-- **Security Metrics** - Track security improvements and compliance status
-- **Trend Analysis** - Identify patterns and trends across your application portfolio
-
-### Advanced Reporting
-- **Custom Reports** - Generate detailed reports with filtering and customization
+### Reporting Capabilities
 - **Export Capabilities** - CSV exports for security analysis, lifecycle tracking, and compliance
 - **Dashboard Integration** - Embed metrics and reports in custom dashboards
-- **Scheduled Reports** - Automated report generation and delivery
 
 ### Security Reporting
 - **Attack Surface Reports** - Detailed vulnerability assessment reports
 - **Permission Analysis Reports** - Comprehensive API permission and risk reports
-- **Compliance Reports** - Automated compliance checking and reporting
-- **Security Trend Analysis** - Track security improvements over time
-
-## 🔒 Security & Compliance Features
-
-### Enterprise Security
-- **Zero Trust Architecture** - Never trust, always verify approach
-- **Token-Based Access** - All operations use delegated permissions
-- **Principle of Least Privilege** - Minimal required permissions only
-- **Encrypted Communications** - All data in transit encrypted with TLS 1.3
-
-### Compliance & Auditing
-- **Comprehensive Audit Logging** - All security-relevant events logged
-- **Tamper-Proof Logs** - Cryptographically signed audit logs
-- **Change Tracking** - Detailed log of all configuration changes
-- **Export Capabilities** - Export audit logs for external analysis
-
-### Data Protection
-- **No Secrets Storage** - Application secrets never stored client-side
-- **Automatic Session Management** - Secure session handling with timeout
-- **Data Classification** - Proper handling of sensitive data types
-- **Privacy Controls** - GDPR and privacy regulation compliance
 
 ## 🎯 Specialized Use Cases
 
@@ -143,7 +104,6 @@ This comprehensive guide covers all features available in the AppConfig² Suite,
 ### IT Operations
 - **Application Portfolio Management** - Centralized view and management of all applications
 - **Lifecycle Management** - Track application creation, changes, and ownership
-- **Compliance Monitoring** - Automated compliance checking and reporting
 - **Security Monitoring** - Continuous security posture assessment
 
 ### Security Teams
@@ -155,22 +115,7 @@ This comprehensive guide covers all features available in the AppConfig² Suite,
 ### Support Teams
 - **Advanced Troubleshooting** - Comprehensive tools for diagnosing authentication issues
 - **Configuration Analysis** - Deep dive into application configurations
-- **User Access Review** - Review and analyze user access patterns
 - **Issue Resolution** - Quick identification and resolution of common issues
-
-## 🚀 Advanced Features
-
-### Automation & Integration
-- **PowerShell Integration** - Native PowerShell module for automation
-- **API Access** - Programmatic access to AppConfig² functionality
-- **Webhook Integration** - Real-time notifications for configuration changes
-- **CI/CD Integration** - Integration with Azure DevOps and GitHub workflows
-
-### Intelligence & Insights
-- **Smart Recommendations** - AI-powered recommendations for configuration improvements
-- **Pattern Recognition** - Identify configuration patterns and potential issues
-- **Predictive Analysis** - Predict potential security and configuration issues
-- **Benchmarking** - Compare configurations against industry best practices
 
 ## 📈 Performance & Scalability
 
@@ -178,7 +123,6 @@ This comprehensive guide covers all features available in the AppConfig² Suite,
 - **Intelligent Caching** - Smart caching strategies for improved performance
 - **Lazy Loading** - On-demand loading of components and data
 - **Batch Operations** - Efficient bulk operations for better performance
-- **Real-Time Updates** - Live data updates without page refreshes
 
 ### Scalability Features
 - **Large Tenant Support** - Optimized for organizations with hundreds of applications
@@ -198,15 +142,8 @@ This comprehensive guide covers all features available in the AppConfig² Suite,
 
 ### New Analysis Tools
 - **Attack Surface Analyzer** - Comprehensive security vulnerability assessment
-- **Application Lifecycle Tracker** - Complete application history and ownership tracking
+- **Application Lifecycle Tracker** - Application history and ownership tracking
 - **Permission Risk Analyzer** - Advanced permission analysis with risk scoring
-- **Compliance Monitor** - Automated compliance checking against security standards
-
-### Tool Differentiation
-- **AppConfig Enhancements** - New backup and restore capabilities with point-in-time recovery
-- **AppTesting Launch** - New read-only tool for compliance-conscious organizations
-- **Shared Capabilities** - Common analysis and testing features across both tools
-- **Tool Selection Guide** - Built-in guidance for choosing the right tool
 
 ---
 
