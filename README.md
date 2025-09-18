@@ -1,169 +1,185 @@
-# AppConfig² 
+# AppConfig² Suite
 
 <div align="center">
   <img src="https://appconfigapp.toncheetah.com/images/logo-nobackground-5000-orange-grad-wheel.png" alt="AppConfig² Logo" width="200"/>
-  
-  <h3>Empowering Microsoft Entra™ App Management</h3>
-  
-  [![LinkedIn](https://img.shields.io/badge/LinkedIn-AppConfig²-blue?style=flat&logo=linkedin)](https://www.linkedin.com/company/appconfig-square/)
-  [![Website](https://img.shields.io/badge/Website-AppConfig.app-orange?style=flat&logo=web)](https://appconfigapp.toncheetah.com/)
-  [![Early Access](https://img.shields.io/badge/Status-Early%20Access-green?style=flat)](https://forms.office.com/Pages/ResponsePage.aspx?id=KpDK7BEFckufqeOwyvweCVTykKo0P21GpY7N2jlgh7xUNFExRVRDSVoxTlMxNVM3V0dFUkUyTDQ5UC4u)
-  
-  <p><strong>The ultimate tool for testing, configuring, and troubleshooting Microsoft Entra™ applications with confidence and ease.</strong></p>
+  <p><strong>Complete Identity and Access Management Suite for Microsoft Entra™</strong></p>
 </div>
 
 ---
 
-## 🚀 What is AppConfig²?
+## 🚀 What is AppConfig² Suite?
 
-AppConfig² is a specialized web application designed for developers, IT administrators, and security professionals who work with Microsoft Entra ID (formerly Azure AD). It provides a comprehensive suite of tools to safely test authentication flows, configure applications, decode tokens, and perform in-depth analysis of app registrations.
+AppConfig² is a comprehensive Identity and Access Management suite featuring two specialized tools designed for different organizational needs and compliance requirements. Both tools provide powerful Microsoft Entra ID (formerly Azure AD) capabilities while serving distinct use cases.
 
-### ✨ Key Highlights
+### 🔧 AppConfig - Full Configuration Management
+The complete solution for developers, IT administrators, and security professionals who need full control over application configurations with comprehensive backup and restore capabilities.
 
-- **🔐 Safe Testing Environment** - Test app configurations without fear of breaking production
-- **🔄 Automatic Backups** - Every change is backed up automatically for easy restoration
-- **🎯 Real-time Token Analysis** - Decode and inspect OAuth/OIDC tokens instantly
-- **📊 Embedded Graph Explorer** - Deep dive into your app's configuration using Microsoft Graph
-- **🛡️ Security-First Design** - Built with enterprise security best practices
+### 🔍 AppTesting - Read-Only Analysis & Testing
+A specialized tool for organizations requiring configuration changes through official Entra portal only, while maintaining powerful troubleshooting and analysis capabilities.
 
 ---
 
-## 🎯 Who Is This For?
+## 🎯 Who Is This Suite For?
 
 <table>
 <tr>
 <td align="center" width="25%">
 <img src="https://img.icons8.com/fluency/48/technical-support.png" alt="Support"/>
 <br/><strong>Level 3 Support</strong>
-<br/>Troubleshoot complex application issues with a single comprehensive tool
+<br/>Comprehensive troubleshooting with both read-only and full management options
 </td>
 <td align="center" width="25%">
 <img src="https://img.icons8.com/fluency/48/code.png" alt="Developers"/>
 <br/><strong>Developers</strong>
-<br/>Quickly test authentication flows and ensure seamless Entra ID integration
+<br/>Test authentication flows with appropriate tool based on environment permissions
 </td>
 <td align="center" width="25%">
 <img src="https://img.icons8.com/fluency/48/administrator-male.png" alt="Admins"/>
 <br/><strong>IT Administrators</strong>
-<br/>Test and configure app registrations in hybrid/cloud environments
+<br/>Choose between full management or compliance-ready read-only analysis
 </td>
 <td align="center" width="25%">
 <img src="https://img.icons8.com/fluency/48/security-shield-green.png" alt="Security"/>
 <br/><strong>Security Engineers</strong>
-<br/>Verify applications' configuration against security best practices
+<br/>Security analysis tools with appropriate access levels for your organization
 </td>
 </tr>
 </table>
 
 ---
 
-## ⭐ Core Features
+## ⭐ Core Suite Features
 
-### 🔧 Application Management
-- **📝 Register New Applications** - Create and configure app registrations with guided workflows
-- **🔄 Redirect URI Management** - Add/remove redirect URIs for troubleshooting authorization issues
-- **👥 User Provisioning** - Easily provision or deprovision users to applications
-- **🏷️ App Roles Management** - Define and manage application roles dynamically
-- **🔑 API Permissions** - Use intuitive Graph picker to configure required permissions
-
-### 🔍 Testing & Analysis
-- **🎫 Token Authentication** - Test various authentication flows and inspect token responses
-- **🔓 Token Decoder** - Decode and analyze OAuth/OIDC tokens with detailed claims view
-- **📋 Claims Management** - Add custom claims to tokens for testing requirements
-- **🛡️ Security Analyzer** - Analyze application permissions and identify security risks
-- **📊 Permission Analyzer** - Comprehensive analysis of application permissions and risks
-
-### 🛠️ Advanced Tools
-- **🌐 Embedded Graph Explorer** - Integrated Microsoft Graph API explorer for deep analysis
+### 🔧 AppConfig - Full Management Capabilities
+- **📝 Complete App Lifecycle** - Create, configure, and manage applications end-to-end
+- **🔄 Automatic Backups & Restore** - Every change backed up with one-click restoration
+- **👥 User Provisioning** - Provision and deprovision users with role assignments
+- **🏷️ Dynamic App Roles** - Create and manage application roles with permissions
 - **🗺️ Claims Mapping Policies** - Create, edit, and assign claims mapping policies
-- **📄 Manifest Editor** - Direct application manifest editing when needed
-- **📦 Directory Extensions** - Create and manage custom directory extensions
-- **📋 Conditional Access Analysis** - View applied conditional access policies
+- **📦 Directory Extensions** - Manage custom directory extensions and attributes
+- **🔑 Credential Management** - Generate and manage client secrets and certificates
 
-### 🔄 Safety & Backup
-- **💾 Automatic Backups** - Every configuration change is automatically backed up
-- **⏪ Easy Restoration** - Restore applications to previous configurations with one click
-- **🔒 Safe Testing** - Test configurations without impacting production environments
+### 🔍 AppTesting - Read-Only Analysis
+- **✅ All Testing Capabilities** - Complete authentication flow testing without modifications
+- **🛡️ Compliance Ready** - Meets strict organizational change control policies
+- **📊 Comprehensive Analysis** - Full permission and security analysis capabilities
+- **🔒 Safe Operation** - Zero risk of accidental configuration changes
+- **👀 Deep Insights** - All troubleshooting features with read-only access
+
+### 🌟 Shared Capabilities (Both Tools)
+- **🎫 Authentication Flow Testing** - Test various flows and inspect token responses
+- **🔓 Advanced Token Analysis** - Decode and analyze OAuth/OIDC tokens with detailed claims
+- **📊 Enhanced Dashboard** - Real-time application portfolio metrics and insights
+- **🛡️ Security Analysis** - Comprehensive permission analysis and risk assessment
+- **📈 Attack Surface Analysis** - Identify and evaluate potential security vulnerabilities
+- **🔄 Application Lifecycle Tracking** - Monitor creation, ownership, and change history
+- **🌐 Embedded Graph Explorer** - Deep dive analysis using Microsoft Graph API
+- **📋 Conditional Access Analysis** - View applied policies and their authentication impact
 
 ---
 
-## 📸 Screenshots
+## 📸 Suite Screenshots
 
 <div align="center">
 
-### Dashboard Home View
-<img src="https://appconfigapp.toncheetah.com/images/Home.png" alt="Dashboard Home" width="600"/>
+### Enhanced Dashboard with Portfolio Overview
+<img src="https://appconfigapp.toncheetah.com/images/Home.png" alt="Enhanced Dashboard" width="600"/>
 
-### Application Testing Interface
-<img src="https://appconfigapp.toncheetah.com/images/AppTester.png" alt="App Tester" width="600"/>
+### Advanced Security Analysis
+<img src="https://appconfigapp.toncheetah.com/images/SecurityAnalyzer.png" alt="Security Analysis" width="600"/>
 
-### Authentication Flow Testing
-<img src="https://appconfigapp.toncheetah.com/images/AuthenticateAs-1.png" alt="Authentication Testing" width="600"/>
+### Application Lifecycle Management
+<img src="https://appconfigapp.toncheetah.com/images/AppTester.png" alt="Application Management" width="600"/>
 
 </div>
 
 <details>
 <summary>📱 <strong>View More Screenshots</strong></summary>
 
-### Application Filtering
-<img src="https://appconfigapp.toncheetah.com/images/AppsContent.png" alt="Apps Content" width="500"/>
+### Application Portfolio Management
+<img src="https://appconfigapp.toncheetah.com/images/AppsContent.png" alt="Portfolio Management" width="500"/>
 
-### Advanced Tools
-<img src="https://appconfigapp.toncheetah.com/images/ToolsContent.png" alt="Tools Content" width="500"/>
+### Advanced Tools Suite
+<img src="https://appconfigapp.toncheetah.com/images/ToolsContent.png" alt="Advanced Tools" width="500"/>
 
-### Security Analyzer
-<img src="https://appconfigapp.toncheetah.com/images/SecurityAnalyzer.png" alt="Security Analyzer" width="500"/>
-
-### Graph Explorer Integration
+### Integrated Graph Explorer
 <img src="https://appconfigapp.toncheetah.com/images/GraphExplorer.png" alt="Graph Explorer" width="500"/>
 
 </details>
 
 ---
 
-## 🚦 How It Works
+## 🚦 How The Suite Works
 
 ```mermaid
 graph LR
-    A[🔐 Sign in with Entra ID] --> B[🎯 Select Application]
-    B --> C[🔧 Test Configurations]
-    C --> D[📊 Analyze Results]
-    D --> E[⏪ Restore if Needed]
+    A[🔐 Sign in with Entra ID] --> B{Choose Your Tool}
+    B --> C[🔧 AppConfig - Full Management]
+    B --> D[🔍 AppTesting - Read-Only]
+    C --> E[📊 Configure & Test]
+    D --> F[📊 Analyze & Test]
+    E --> G[⏪ Backup & Restore]
+    F --> G
+    G --> H[📈 Monitor & Report]
     
     style A fill:#e1f5fe
     style B fill:#f3e5f5
     style C fill:#e8f5e8
     style D fill:#fff3e0
-    style E fill:#fce4ec
+    style E fill:#f1f8e9
+    style F fill:#fce4ec
+    style G fill:#f3e5f5
+    style H fill:#e0f2f1
 ```
 
+### AppConfig Workflow
 1. **🔐 Sign in** with your Microsoft Entra ID account
-2. **🎯 Select** the application you want to test or configure
-3. **🔧 Test** different configurations, add claims, modify settings
-4. **📊 Analyze** authentication flows, tokens, and security settings
-5. **⏪ Restore** original configuration using automatic backups
+2. **🎯 Select** applications from your portfolio dashboard
+3. **🔧 Configure** settings with automatic backup protection
+4. **📊 Test** authentication flows and analyze results
+5. **⏪ Restore** configurations using one-click restoration
+
+### AppTesting Workflow
+1. **🔐 Sign in** with your Microsoft Entra ID account
+2. **🎯 Select** applications for analysis
+3. **📊 Test** authentication flows without modification risks
+4. **🔍 Analyze** configurations and identify issues
+5. **📈 Report** findings while maintaining compliance
 
 ---
 
 ## 🏁 Getting Started
 
-### Prerequisites
-- Microsoft Entra ID tenant access
-- Application registration permissions
-- Modern web browser (Chrome, Firefox, Edge, Safari)
+### Choose Your Tool
+
+**Need full configuration management?** → **AppConfig**
+- Modify application settings
+- Create and manage app roles
+- Generate client secrets
+- User provisioning capabilities
+- Complete backup and restore
+
+**Need read-only analysis only?** → **AppTesting**
+- Comprehensive testing without changes
+- Compliance with strict change control
+- All troubleshooting capabilities
+- Risk-free operation
+- Security and permission analysis
 
 ### Quick Start
-1. **Request Early Access** at [AppConfig² Website](https://appconfigapp.toncheetah.com/)
-2. **Sign in** with your Entra ID credentials
-3. **Explore** the dashboard and available applications
-4. **Start testing** with the comprehensive toolkit
+1. **Request Access** at [AppConfig² Website](https://appconfigapp.toncheetah.com/)
+2. **Choose your tool** based on organizational requirements
+3. **Sign in** with your Entra ID credentials
+4. **Explore** the enhanced dashboard and portfolio insights
+5. **Start testing** with comprehensive toolkit
 
 ### Early Access Program 🎉
-AppConfig² is currently in **Early Access**. Join our program to:
-- ✅ Get full access to all premium features
-- ✅ Receive priority support and direct feedback channel
-- ✅ Influence future product development
-- ✅ Earn exclusive lifetime discounts
+The complete **AppConfig² Suite** is currently in **Early Access**:
+- ✅ Full access to both AppConfig and AppTesting tools
+- ✅ Enhanced dashboard and portfolio management
+- ✅ Advanced security and lifecycle analysis
+- ✅ Priority support and direct feedback channel
+- ✅ Influence future development of the suite
 
 [**Request Early Access →**](https://forms.office.com/Pages/ResponsePage.aspx?id=KpDK7BEFckufqeOwyvweCVTykKo0P21GpY7N2jlgh7xUNFExRVRDSVoxTlMxNVM3V0dFUkUyTDQ5UC4u)
 
@@ -171,34 +187,44 @@ AppConfig² is currently in **Early Access**. Join our program to:
 
 ## 🏗️ Technical Architecture
 
-AppConfig² is built using modern web technologies optimized for enterprise identity management:
+The AppConfig² Suite is built using modern web technologies optimized for enterprise identity management:
 
 - **Frontend**: React 18+ with TypeScript and Material-UI
 - **Authentication**: Microsoft Authentication Library (MSAL) 2.0
-- **API Integration**: Microsoft Graph SDK
-- **State Management**: React Context with custom hooks
-- **Security**: OAuth 2.0 / OpenID Connect compliant
+- **API Integration**: Microsoft Graph SDK with enhanced caching
+- **State Management**: React Context with custom hooks and optimized caching
+- **Security**: OAuth 2.0 / OpenID Connect compliant with zero-trust architecture
+
+### Enhanced Features
+- **Portfolio Dashboard**: Real-time application metrics and insights
+- **Advanced Caching**: Optimized performance with intelligent data caching
+- **Export Capabilities**: CSV exports for security and lifecycle analysis
+- **Attack Surface Analysis**: Comprehensive security vulnerability assessment
+- **Lifecycle Tracking**: Complete application creation and change history
 
 ---
 
 ## 🔒 Security & Compliance
 
-AppConfig² follows enterprise security best practices:
+The AppConfig² Suite follows enterprise security best practices:
 
 - **🔐 Zero Secrets Storage** - No application secrets or credentials stored
 - **🎫 Token-Based Access** - All operations use delegated permissions
 - **🛡️ Principle of Least Privilege** - Minimal required permissions only
-- **🔄 Automatic Backups** - Safety nets for all modifications
+- **🔄 Automatic Backups** - Safety nets for all modifications (AppConfig)
+- **📊 Compliance Ready** - Read-only option for strict change control (AppTesting)
+- **🛡️ Zero Trust Architecture** - Never trust, always verify approach
 
-Read our [SECURITY.md](./SECURITY.md) for complete security documentation.
+Read our [Security Guidelines](./Security%20Guidelines.md) for complete security documentation.
 
 ---
 
-## 📚 Documentation
+## 📚 Suite Documentation
 
-- **[Features Guide](./FEATURES.md)** - Comprehensive feature documentation
-- **[Architecture Overview](./Architecture Overview.md)** - Technical architecture details
-- **[Feature Request](./Feature Request.md)** - How to contribute to the project
+- **[AppConfig² Features Guide](./AppConfig²%20Features%20Guide.md)** - Comprehensive suite feature documentation
+- **[Architecture Overview](./Architecture%20Overview.md)** - Technical architecture and design decisions
+- **[Security Guidelines](./Security%20Guidelines.md)** - Enterprise security and compliance information
+- **[Feature Request](./Feature%20Request.md)** - How to contribute to the suite development
 
 ---
 
@@ -207,10 +233,10 @@ Read our [SECURITY.md](./SECURITY.md) for complete security documentation.
 We welcome contributions from the community! Whether you're reporting bugs, suggesting features, or contributing code, please read our [Contributing Guidelines](./CONTRIBUTING.md).
 
 ### Ways to Contribute
-- 🐛 **Report Issues** - Help us identify and fix bugs
-- 💡 **Suggest Features** - Share ideas for new functionality
-- 📖 **Improve Documentation** - Help make our docs better
-- 🧪 **Beta Testing** - Join our early access program
+- 🐛 **Report Issues** - Help us identify and fix bugs across both tools
+- 💡 **Suggest Features** - Share ideas for new functionality in either tool
+- 📖 **Improve Documentation** - Help make our comprehensive docs better
+- 🧪 **Beta Testing** - Join our early access program for the complete suite
 
 ---
 
@@ -232,16 +258,17 @@ This project is proprietary software. All rights reserved. See [LICENSE](./LICEN
 ## 🙏 Acknowledgments
 
 - **Microsoft** for the comprehensive Entra ID and Graph API ecosystem
-- **Early Access Users** for valuable feedback and testing
+- **Early Access Users** for valuable feedback and testing across both tools
+- **Enterprise Partners** for guidance on compliance and organizational requirements
 
 ---
 
 <div align="center">
   <h3>🚀 Ready to Transform Your Entra ID Management?</h3>
-  <p>Join professionals who trust AppConfig² for their identity management needs.</p>
+  <p>Choose the right tool for your organization's needs and compliance requirements.</p>
   
   <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=KpDK7BEFckufqeOwyvweCVTykKo0P21GpY7N2jlgh7xUNFExRVRDSVoxTlMxNVM3V0dFUkUyTDQ5UC4u">
-    <img src="https://img.shields.io/badge/Get%20Early%20Access-Free%20Trial-orange?style=for-the-badge&logo=microsoft" alt="Get Early Access"/>
+    <img src="https://img.shields.io/badge/Get%20Early%20Access-Complete%20Suite-orange?style=for-the-badge&logo=microsoft" alt="Get Early Access"/>
   </a>
 </div>
 
