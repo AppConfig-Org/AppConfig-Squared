@@ -1,415 +1,169 @@
 # AppConfig² Architecture Overview
 
-This document provides a comprehensive overview of the technical architecture, design decisions, and implementation details of AppConfig².
+This document provides a high-level overview of the AppConfig² Suite's technical architecture and design principles.
 
 ## 🏗️ High-Level Architecture
 
 ```mermaid
 graph TB
     subgraph "Client Layer"
-        A[React SPA] --> B[MSAL.js 2.0]
-        A --> C[Material-UI Components]
-        A --> D[TypeScript]
+        A[React Web Application] --> B[Microsoft Authentication]
+        A --> C[Modern UI Components]
     end
     
-    subgraph "Authentication Layer"
-        B --> E[Microsoft Entra ID]
-        E --> F[Access Tokens]
-        E --> G[ID Tokens]
+    subgraph "Authentication"
+        B --> D[Microsoft Entra ID]
+        D --> E[Secure Access Tokens]
     end
     
-    subgraph "API Layer"
-        F --> H[Microsoft Graph API]
-        F --> I[Custom Extensions]
-    end
-    
-    subgraph "Data Layer"
-        H --> J[Application Registrations]
-        H --> K[Users & Groups]
-        H --> L[Directory Extensions]
-        H --> M[Policies]
+    subgraph "Microsoft Cloud"
+        E --> F[Microsoft Graph API]
+        F --> G[Your Entra Applications]
+        F --> H[User Directory]
     end
     
     style A fill:#e1f5fe
-    style E fill:#f3e5f5
-    style H fill:#e8f5e8
+    style D fill:#f3e5f5
+    style F fill:#e8f5e8
 ```
 
-## 🎯 Core Architecture Principles
+## 🎯 Core Design Principles
 
-### 1. Security-First Design
-- **Zero Trust Architecture** - Never trust, always verify
-- **Principle of Least Privilege** - Minimal required permissions only
-- **Token-Based Authentication** - No stored credentials or secrets
-- **Client-Side Security** - All sensitive operations server-validated
+### 1. Security-First Architecture
+- **Zero Trust** - Every request is authenticated and verified
+- **No Secrets Storage** - Your credentials never leave Microsoft's secure environment
+- **Delegated Permissions** - AppConfig² only accesses what you explicitly allow
+- **Encrypted Communications** - All data is encrypted in transit
 
-### 2. Scalability & Performance
+### 2. Microsoft-Native Integration
+- **Native Entra ID Authentication** - Uses your existing Microsoft identity
+- **Microsoft Graph API** - Direct integration with Microsoft's secure APIs
+- **Azure-Ready** - Designed for Azure-native deployment and scaling
+- **Enterprise Compliance** - Meets Microsoft's enterprise security standards
+
+### 3. Modern Web Technology
 - **Single Page Application** - Fast, responsive user experience
-- **Lazy Loading** - Components loaded on-demand
-- **Efficient Caching** - Smart caching strategies for Graph API data
-- **Optimistic Updates** - UI updates before server confirmation
+- **Real-Time Updates** - Live data synchronization without page refreshes
+- **Mobile Responsive** - Works seamlessly across devices
+- **Progressive Enhancement** - Features load based on your permissions
 
-### 3. Maintainability
-- **Component-Based Architecture** - Reusable, testable components
-- **TypeScript** - Type safety and better developer experience
-- **Consistent Patterns** - Standardized approaches across the application
-- **Comprehensive Testing** - Unit, integration, and e2e testing
+## 🔐 Security Architecture
 
-## 🔧 Technology Stack
-
-### Frontend Technologies
-| Technology | Version | Purpose |
-|------------|---------|---------|
-| React | 18+ | Core UI framework |
-| TypeScript | 5.0+ | Type safety and developer experience |
-| Material-UI (MUI) | 5.x | Component library and design system |
-| MSAL.js | 2.x | Microsoft authentication library |
-| React Router | 6.x | Client-side routing |
-| Axios | 1.x | HTTP client for API calls |
-
-### Development Tools
-| Tool | Purpose |
-|------|---------|
-| Vite | Build tool and development server |
-| ESLint | Code linting and style enforcement |
-| Prettier | Code formatting |
-| Jest | Unit testing framework |
-| Cypress | End-to-end testing |
-| Storybook | Component development and documentation |
-
-## 🔐 Authentication Architecture
-
-### MSAL Implementation
-```typescript
-// MSAL Configuration
-const msalConfig = {
-  auth: {
-    clientId: process.env.REACT_APP_CLIENT_ID,
-    authority: `https://login.microsoftonline.com/${tenantId}`,
-    redirectUri: window.location.origin,
-  },
-  cache: {
-    cacheLocation: "sessionStorage",
-    storeAuthStateInCookie: false,
-  },
-};
-
-// Required Scopes
-const graphScopes = [
-  "Application.ReadWrite.All",
-  "Directory.ReadWrite.All",
-  "Policy.ReadWrite.All",
-  "User.ReadWrite.All"
-];
-```
-
-### Token Management
-- **Automatic Token Refresh** - Silent token renewal before expiration
-- **Token Caching** - Efficient token storage and retrieval
-- **Scope-Based Access** - Dynamic scope requests based on features
-- **Error Handling** - Comprehensive error handling for authentication failures
-
-## 📊 State Management
-
-### React Context Pattern
-```typescript
-// Application State Context
-interface AppContextType {
-  applications: Application[];
-  currentApp: Application | null;
-  user: User | null;
-  loading: boolean;
-  error: string | null;
-}
-
-// Custom Hooks
-const useApplications = () => {
-  const context = useContext(AppContext);
-  return {
-    applications: context.applications,
-    loading: context.loading,
-    error: context.error,
-    actions: {
-      loadApplications,
-      createApplication,
-      updateApplication,
-      deleteApplication,
-    }
-  };
-};
-```
-
-### Data Flow
-1. **Component Triggers Action** - User interaction triggers state change
-2. **Context Updates** - Centralized state management through React Context
-3. **Graph API Call** - Authenticated API call to Microsoft Graph
-4. **State Update** - Context state updated with new data
-5. **Component Re-render** - UI updates reflect new state
-
-## 🌐 API Integration
-
-### Microsoft Graph SDK Integration
-```typescript
-// Graph Client Configuration
-const graphClient = Client.init({
-  authProvider: async (done) => {
-    try {
-      const token = await instance.acquireTokenSilent({
-        scopes: ["https://graph.microsoft.com/.default"],
-        account: accounts[0],
-      });
-      done(null, token.accessToken);
-    } catch (error) {
-      done(error, null);
-    }
-  },
-});
-
-// Type-Safe API Calls
-class ApplicationService {
-  async getApplications(): Promise<Application[]> {
-    const response = await graphClient
-      .api('/applications')
-      .select('id,appId,displayName,createdDateTime')
-      .top(100)
-      .get();
-    
-    return response.value;
-  }
-}
-```
-
-### Error Handling Strategy
-- **Centralized Error Handling** - Consistent error processing across the application
-- **User-Friendly Messages** - Technical errors translated to user-friendly messages
-- **Retry Logic** - Automatic retry for transient failures
-- **Fallback Mechanisms** - Graceful degradation when services are unavailable
-
-## 🎨 Component Architecture
-
-### Component Hierarchy
-```
-App
-├── AuthenticationProvider
-├── AppRouter
-│   ├── DashboardLayout
-│   │   ├── Sidebar
-│   │   ├── TopBar
-│   │   └── MainContent
-│   │       ├── ApplicationList
-│   │       ├── ApplicationDetail
-│   │       └── ToolsSection
-│   └── AuthenticationRequired
-├── NotificationProvider
-└── ThemeProvider
-```
-
-### Design System
-- **Consistent Styling** - Material-UI theme customization
-- **Responsive Design** - Mobile-first responsive layout
-- **Accessibility** - WCAG 2.1 AA compliance
-- **Dark Mode Support** - User preference-based theme switching
-
-## 🔒 Security Implementation
-
-### Client-Side Security
-```typescript
-// Permission Validation
-const usePermissions = () => {
-  const { user } = useAuth();
-  
-  const hasPermission = (permission: string): boolean => {
-    return user?.permissions?.includes(permission) ?? false;
-  };
-  
-  const requirePermission = (permission: string) => {
-    if (!hasPermission(permission)) {
-      throw new UnauthorizedError(`Missing permission: ${permission}`);
-    }
-  };
-  
-  return { hasPermission, requirePermission };
-};
-
-// Secure API Calls
-const secureApiCall = async (operation: () => Promise<any>) => {
-  try {
-    return await operation();
-  } catch (error) {
-    if (error.code === 'TokenExpired') {
-      await refreshToken();
-      return await operation();
-    }
-    throw error;
-  }
-};
-```
+### Authentication Flow
+1. **Sign In** - Authenticate with your Microsoft Entra ID account
+2. **Permission Grant** - Explicitly grant permissions for specific operations
+3. **Secure Access** - AppConfig² receives temporary, scoped access tokens
+4. **Protected Operations** - All actions validated against your permissions
+5. **Automatic Refresh** - Tokens automatically renewed for seamless experience
 
 ### Data Protection
-- **No Sensitive Data Storage** - Credentials never stored client-side
-- **Encrypted Transport** - All communications over HTTPS
-- **Token Validation** - Server-side token validation for all operations
-- **Audit Logging** - Comprehensive logging of all security-relevant events
+- **🔒 Zero Data Storage** - No application data stored outside Microsoft's environment
+- **🎫 Token-Based Access** - All operations use temporary, scoped access tokens
+- **🛡️ Least Privilege** - Only minimum required permissions requested
+- **📊 Audit Ready** - All operations logged for compliance and security
 
-## 📈 Performance Optimizations
+## 🏢 Enterprise-Ready Features
 
-### Code Splitting
-```typescript
-// Lazy Component Loading
-const ApplicationDetail = lazy(() => import('./components/ApplicationDetail'));
-const ToolsSection = lazy(() => import('./components/ToolsSection'));
-const SecurityAnalyzer = lazy(() => import('./components/SecurityAnalyzer'));
+### Scalability
+- **Multi-Tenant Support** - Works with any size organization
+- **High Performance** - Optimized for organizations with hundreds of applications
+- **Efficient Caching** - Smart data caching reduces API calls and improves speed
+- **Bulk Operations** - Handle multiple applications efficiently
 
-// Route-Based Code Splitting
-const AppRouter = () => (
-  <Suspense fallback={<LoadingSpinner />}>
-    <Routes>
-      <Route path="/apps/:id" element={<ApplicationDetail />} />
-      <Route path="/tools" element={<ToolsSection />} />
-      <Route path="/security" element={<SecurityAnalyzer />} />
-    </Routes>
-  </Suspense>
-);
-```
+### Compliance & Governance
+- **Azure Marketplace** - Enterprise-ready deployment and billing
+- **SOC 2 Aligned** - Follows Microsoft's security and compliance standards
+- **Audit Logging** - Comprehensive logging for compliance requirements
+- **Change Tracking** - Complete audit trail of all configuration changes
 
-### Caching Strategy
-- **Memory Caching** - In-memory cache for frequently accessed data
-- **HTTP Caching** - Proper cache headers for static resources
-- **Graph API Caching** - Smart caching of Graph API responses
-- **Cache Invalidation** - Automatic cache invalidation on data changes
+### Tool Differentiation
+- **AppConfig** - Full management capabilities with automatic backup protection
+- **AppTesting** - Read-only analysis for strict change control environments
+- **Shared Security** - Both tools use identical security architecture
+- **Flexible Deployment** - Choose tools based on organizational requirements
 
-## 🧪 Testing Strategy
+## 🌐 Technology Stack
 
-### Testing Pyramid
-```typescript
-// Unit Tests - Component Testing
-describe('ApplicationCard', () => {
-  it('should display application information correctly', () => {
-    const mockApp = createMockApplication();
-    render(<ApplicationCard application={mockApp} />);
-    
-    expect(screen.getByText(mockApp.displayName)).toBeInTheDocument();
-    expect(screen.getByText(mockApp.appId)).toBeInTheDocument();
-  });
-});
+### Core Technologies
+| Component | Technology | Purpose |
+|-----------|------------|---------|
+| **Frontend** | React 18+ with TypeScript | Modern, type-safe user interface |
+| **Authentication** | Microsoft MSAL 2.0 | Secure Microsoft identity integration |
+| **API Integration** | Microsoft Graph SDK | Native Microsoft API connectivity |
+| **UI Framework** | Material-UI | Consistent, accessible design system |
 
-// Integration Tests - API Integration
-describe('ApplicationService', () => {
-  it('should fetch applications from Graph API', async () => {
-    const mockGraphClient = createMockGraphClient();
-    const service = new ApplicationService(mockGraphClient);
-    
-    const applications = await service.getApplications();
-    
-    expect(applications).toHaveLength(3);
-    expect(mockGraphClient.api).toHaveBeenCalledWith('/applications');
-  });
-});
+### Microsoft Integration
+- **Microsoft Entra ID** - Native identity and access management
+- **Microsoft Graph API** - Secure, comprehensive Microsoft 365 integration
+- **Azure Deployment** - Cloud-native deployment and scaling
+- **Microsoft Support** - Enterprise-grade Microsoft ecosystem support
 
-// E2E Tests - User Workflows
-describe('Application Management', () => {
-  it('should allow creating a new application', () => {
-    cy.visit('/applications');
-    cy.get('[data-testid="create-app-button"]').click();
-    cy.get('[data-testid="app-name-input"]').type('Test Application');
-    cy.get('[data-testid="submit-button"]').click();
-    
-    cy.contains('Test Application').should('be.visible');
-  });
-});
-```
+## 🚀 Deployment Options
 
-### Quality Assurance
-- **Automated Testing** - Comprehensive test suite with CI/CD integration
-- **Code Coverage** - Minimum 80% code coverage requirement
-- **Performance Testing** - Regular performance benchmarking
-- **Security Testing** - Automated security vulnerability scanning
+### Azure Marketplace
+- **One-Click Deployment** - Deploy directly from Azure Marketplace
+- **Azure-Native Billing** - Integrated with your Azure subscription
+- **Enterprise Security** - Inherits Azure's enterprise security features
+- **Microsoft Support** - Access to Microsoft's enterprise support ecosystem
 
-## 🚀 Deployment Architecture
+### Development & Testing
+- **Development Environment** - Safe testing environment separate from production
+- **Staging Deployment** - Test configurations before production deployment
+- **Backup & Recovery** - Automatic configuration backup and restore (AppConfig)
+- **Change Management** - Built-in change tracking and audit capabilities
 
-### Build Process
-```yaml
-# Build Pipeline
-build:
-  stage: build
-  script:
-    - npm ci
-    - npm run type-check
-    - npm run lint
-    - npm run test:coverage
-    - npm run build
-  artifacts:
-    paths:
-      - dist/
-    expire_in: 1 hour
+## 📊 Performance & Reliability
 
-# Security Scanning
-security:
-  stage: security
-  script:
-    - npm audit
-    - npm run security:scan
-    - npm run vulnerability:check
-```
+### Performance Features
+- **Optimized Loading** - Components load on-demand for faster startup
+- **Intelligent Caching** - Smart caching reduces Microsoft Graph API calls
+- **Real-Time Updates** - Live data synchronization without page refreshes
+- **Responsive Design** - Optimized for desktop, tablet, and mobile devices
 
-### Environment Configuration
-- **Environment Variables** - Configuration through environment variables
-- **Feature Flags** - Runtime feature toggling
-- **A/B Testing** - Controlled feature rollouts
-- **Monitoring Integration** - Application performance monitoring
+### Reliability & Availability
+- **High Availability** - Built on Microsoft's highly available infrastructure
+- **Automatic Recovery** - Graceful handling of temporary service interruptions
+- **Error Handling** - User-friendly error messages and automatic retry logic
+- **Monitoring Integration** - Built-in monitoring and health checks
 
-## 📊 Monitoring & Observability
+## 🔮 Future-Ready Architecture
 
-### Application Monitoring
-```typescript
-// Error Tracking
-const errorHandler = (error: Error, errorInfo: ErrorInfo) => {
-  console.error('Application Error:', error);
-  
-  // Send to monitoring service
-  monitoringService.captureException(error, {
-    extra: errorInfo,
-    user: getCurrentUser(),
-    timestamp: new Date().toISOString(),
-  });
-};
+### Extensibility
+- **API-First Design** - Built for integration with other enterprise tools
+- **Webhook Support** - Real-time notifications for configuration changes
+- **PowerShell Integration** - Automation capabilities for IT operations
+- **Custom Extensions** - Extensible architecture for organization-specific needs
 
-// Performance Monitoring
-const performanceLogger = {
-  trackApiCall: (endpoint: string, duration: number) => {
-    monitoringService.addBreadcrumb({
-      category: 'api',
-      message: `${endpoint} completed in ${duration}ms`,
-      level: 'info',
-    });
-  },
-  
-  trackUserAction: (action: string, metadata?: object) => {
-    monitoringService.captureEvent(action, metadata);
-  },
-};
-```
-
-### Health Checks
-- **Application Health** - Regular application health monitoring
-- **Dependency Health** - Monitor Microsoft Graph API availability
-- **Performance Metrics** - Track response times and error rates
-- **User Experience** - Monitor real user performance data
-
-## 🔮 Future Architecture Considerations
-
-### Scalability Enhancements
-- **Micro-Frontend Architecture** - Break application into independent micro-frontends
-- **Worker Threads** - Offload heavy computations to web workers
-- **Progressive Web App** - Add PWA capabilities for offline functionality
-- **Edge Computing** - Leverage edge computing for improved performance
-
-### Technology Evolution
-- **React Server Components** - Adoption of React Server Components
-- **WebAssembly** - High-performance computations with WebAssembly
-- **GraphQL** - Potential migration to GraphQL for more efficient data fetching
-- **AI Integration** - Machine learning-powered features and insights
+### Innovation Pipeline
+- **AI-Powered Insights** - Machine learning for configuration recommendations
+- **Advanced Analytics** - Enhanced reporting and trend analysis
+- **Integration Expansion** - Additional Microsoft 365 service integrations
+- **Automation Features** - Expanded automation and workflow capabilities
 
 ---
 
-> 📝 **Note**: This architecture is continuously evolving. For the latest technical specifications, please refer to the codebase documentation and technical design documents.
+## 🎯 Why This Architecture Matters
+
+### For IT Decision Makers
+- **✅ Enterprise Security** - Meets the highest enterprise security standards
+- **✅ Microsoft Native** - Seamless integration with existing Microsoft infrastructure
+- **✅ Scalable & Reliable** - Designed to grow with your organization
+- **✅ Compliance Ready** - Built-in audit and compliance capabilities
+
+### For Development Teams
+- **✅ Modern Technology** - Built with latest web technologies and best practices
+- **✅ Developer Friendly** - Clean APIs and comprehensive documentation
+- **✅ Secure by Design** - Security built into every layer of the application
+- **✅ Microsoft Ecosystem** - Leverages familiar Microsoft development patterns
+
+### For Security Teams
+- **✅ Zero Trust Architecture** - Never trust, always verify approach
+- **✅ Minimal Attack Surface** - No secrets storage or persistent data
+- **✅ Comprehensive Auditing** - Complete audit trail for all operations
+- **✅ Microsoft Standards** - Follows Microsoft's enterprise security guidelines
+
+---
+
+> 🏗️ **Architecture Philosophy**: AppConfig² is built as a secure, Microsoft-native application that enhances your existing Entra ID environment without introducing additional security risks or compliance complexity.
+
+> 📋 **Enterprise Ready**: This architecture supports organizations from small teams to large enterprises with hundreds of applications and strict compliance requirements.
