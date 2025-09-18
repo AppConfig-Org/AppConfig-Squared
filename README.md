@@ -217,13 +217,11 @@ The AppConfig² Suite follows enterprise security best practices:
 - **📊 Compliance Ready** - Read-only option for strict change control (AppTesting)
 - **🛡️ Zero Trust Architecture** - Never trust, always verify approach
 
-Read our [Security Guidelines](./Security%20Guidelines.md) for complete security documentation.
-
 ---
 
 ## 📚 Suite Documentation
 
-- **[AppConfig² Features Guide](./AppConfig²%20Features%20Guide.md)** - Comprehensive suite feature documentation
+- **[AppConfig² Features Guide](./Features%20Guide.md)** - Comprehensive suite feature documentation
 - **[Architecture Overview](./Architecture%20Overview.md)** - Technical architecture and design decisions
 - **[Security Guidelines](./Security%20Guidelines.md)** - Enterprise security and compliance information
 - **[Feature Request](./Feature%20Request.md)** - How to contribute to the suite development
