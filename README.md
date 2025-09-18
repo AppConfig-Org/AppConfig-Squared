@@ -112,16 +112,28 @@ A specialized tool for organizations requiring configuration changes through off
 ## 🚦 How The Suite Works
 
 ```mermaid
-graph LR
+flowchart LR
     A[🔐 Sign in with Entra ID] --> B{Choose Your Tool}
-    B --> C[🔧 AppConfig - Full Management]
-    B --> D[🔍 AppTesting - Read-Only]
-    C --> E[📊 Configure & Test]
+
+    %% Vertically stack tool choices (AppTesting above AppConfig)
+    subgraph S[ ]
+      direction TB
+      D[🔍 AppTesting - Read-Only]
+      C[🔧 AppConfig - Full Management]
+    end
+    style S fill:transparent,stroke:transparent
+
+    B --> D
+    B --> C
+
+    %% Paths
     D --> F[📊 Analyze & Test]
+    C --> E[📊 Configure & Test]
     E --> G[⏪ Backup & Restore]
     F --> H[📈 Monitor & Report]
     G --> H
-    
+
+    %% Styling
     style A fill:#e1f5fe
     style B fill:#f3e5f5
     style C fill:#e8f5e8
