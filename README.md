@@ -223,8 +223,6 @@ The AppConfig² Suite follows enterprise security best practices:
 
 - **[AppConfig² Features Guide](./Features%20Guide.md)** - Comprehensive suite feature documentation
 - **[Architecture Overview](./Architecture%20Overview.md)** - Technical architecture and design decisions
-- **[Security Guidelines](./Security%20Guidelines.md)** - Enterprise security and compliance information
-- **[Feature Request](./Feature%20Request.md)** - How to contribute to the suite development
 
 ---
 
