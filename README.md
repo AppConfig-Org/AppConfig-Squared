@@ -119,7 +119,7 @@ flowchart LR
     subgraph S[ ]
       direction TB
       D[🔍 AppTesting - Read-Only]
-      C[🔧 AppConfig - Fully Manage]
+      C[🔧 AppConfig - Full Manage]
     end
     style S fill:transparent,stroke:transparent
 
