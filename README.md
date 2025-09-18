@@ -82,28 +82,28 @@ A specialized tool for organizations requiring configuration changes through off
 
 <div align="center">
 
-### Enhanced Dashboard with Portfolio Overview
-<img src="https://www.configsquared.com/images/Home.png" alt="Enhanced Dashboard" width="600"/>
+### Application Dashboard
+<img src="https://www.configsquared.com/images/Home.png" alt="Application Dashboard" width="600"/>
 
-### Advanced Security Analysis
-<img src="https://appconfigapp.toncheetah.com/images/SecurityAnalyzer.png" alt="Security Analysis" width="600"/>
+### Application Filtering
+<img src="https://www.configsquared.com/images/AppsContent.png" alt="Application Filtering" width="600"/>
 
-### Application Lifecycle Management
-<img src="https://appconfigapp.toncheetah.com/images/AppTester.png" alt="Application Management" width="600"/>
+### Application Management
+<img src="https://www.configsquared.com/images/AppTester.png" alt="Application Management" width="600"/>
 
 </div>
 
 <details>
 <summary>📱 <strong>View More Screenshots</strong></summary>
 
-### Application Portfolio Management
-<img src="https://appconfigapp.toncheetah.com/images/AppsContent.png" alt="Portfolio Management" width="500"/>
+### Troubleshooting Authentication as Different User
+<img src="https://www.configsquared.com/images/AuthenticateAs-2.png" alt="Troubleshooting Authentication" width="500"/>
 
 ### Advanced Tools Suite
-<img src="https://appconfigapp.toncheetah.com/images/ToolsContent.png" alt="Advanced Tools" width="500"/>
+<img src="https://www.configsquared.com/images/ToolsContent.png" alt="Advanced Tools" width="500"/>
 
 ### Integrated Graph Explorer
-<img src="https://appconfigapp.toncheetah.com/images/GraphExplorer.png" alt="Graph Explorer" width="500"/>
+<img src="https://www.configsquared.com/images/GraphExplorer.png" alt="Graph Explorer" width="500"/>
 
 </details>
 
