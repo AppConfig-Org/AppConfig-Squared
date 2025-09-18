@@ -1,6 +1,6 @@
 # AppConfig² Suite Features Guide
 
-This comprehensive guide covers features available in the AppConfig² Suite, organized by tool and functionality.
+This guide covers features available in the AppConfig² Suite, organized by tool and functionality.
 
 ## 🌟 Core Capabilities (Both Tools)
 
@@ -9,6 +9,12 @@ This comprehensive guide covers features available in the AppConfig² Suite, org
 - Security Dashboard - Real-time security posture analysis across all applications
 - Interactive Metrics - Clickable cards that filter and navigate to specific applications
 - Export Capabilities - CSV exports for compliance and reporting needs
+
+### Testing & Authentication
+- Multi-Flow Support - Authorization Code, Implicit, Client Credentials, and hybrid flows
+- Real-Time Token Analysis - Live token decoding with syntax highlighting
+- Claims Inspector - Detailed token claims analysis and validation
+- User Context Testing - Test authentication flows as different users
 
 ### Advanced Security Analysis
 - Attack Surface Analysis - Comprehensive vulnerability assessment and attack vector identification
@@ -19,12 +25,6 @@ This comprehensive guide covers features available in the AppConfig² Suite, org
 - Creation Tracking - Monitor when and how applications were created
 - Ownership Management - Track application owners and management responsibilities
 - Quick Statistics - View number of owners, API Permissions, Redirect URIs and App Roles
-
-### Testing & Authentication
-- Multi-Flow Support - Authorization Code, Implicit, Client Credentials, and hybrid flows
-- Real-Time Token Analysis - Live token decoding with syntax highlighting
-- Claims Inspector - Detailed token claims analysis and validation
-- User Context Testing - Test authentication flows as different users
 
 ### Graph Integration & Tools
 - Embedded Graph Explorer - Full Microsoft Graph API console integration
