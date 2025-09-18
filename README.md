@@ -50,6 +50,16 @@ A specialized tool for organizations requiring configuration changes through off
 
 ## ⭐ Core Suite Features
 
+### 🌟 Shared Capabilities (Both Tools)
+- **🎫 Authentication Flow Testing** - Test various flows and inspect token responses
+- **🔓 Advanced Token Analysis** - Decode and analyze OAuth/OIDC tokens with detailed claims
+- **📊 Enhanced Dashboard** - Real-time application portfolio metrics and insights
+- **🛡️ Security Analysis** - Comprehensive permission analysis and risk assessment
+- **📈 Attack Surface Analysis** - Identify and evaluate potential security vulnerabilities
+- **🔄 Application Lifecycle Tracking** - Monitor creation, ownership, and change history
+- **🌐 Embedded Graph Explorer** - Deep dive analysis using Microsoft Graph API
+- **📋 Conditional Access Analysis** - View applied policies and their authentication impact
+
 ### 🔧 AppConfig - Full Management Capabilities
 - **📝 Complete App Lifecycle** - Create, configure, and manage applications end-to-end
 - **🔄 Automatic Backups & Restore** - Tested application silently backed up with one-click restoration
@@ -65,16 +75,6 @@ A specialized tool for organizations requiring configuration changes through off
 - **📊 Comprehensive Analysis** - Full permission and security analysis capabilities
 - **🔒 Safe Operation** - Zero risk of accidental configuration changes
 - **👀 Deep Insights** - All troubleshooting features with read-only access
-
-### 🌟 Shared Capabilities (Both Tools)
-- **🎫 Authentication Flow Testing** - Test various flows and inspect token responses
-- **🔓 Advanced Token Analysis** - Decode and analyze OAuth/OIDC tokens with detailed claims
-- **📊 Enhanced Dashboard** - Real-time application portfolio metrics and insights
-- **🛡️ Security Analysis** - Comprehensive permission analysis and risk assessment
-- **📈 Attack Surface Analysis** - Identify and evaluate potential security vulnerabilities
-- **🔄 Application Lifecycle Tracking** - Monitor creation, ownership, and change history
-- **🌐 Embedded Graph Explorer** - Deep dive analysis using Microsoft Graph API
-- **📋 Conditional Access Analysis** - View applied policies and their authentication impact
 
 ---
 
