@@ -50,7 +50,7 @@ A specialized tool for organizations requiring configuration changes through off
 
 ## ⭐ Core Suite Features
 
-### 🌟 Shared Capabilities (Both Tools)
+### 🌟 Core Capabilities (Both Tools)
 - **🎫 Authentication Flow Testing** - Test various flows and inspect token responses
 - **🔓 Advanced Token Analysis** - Decode and analyze OAuth/OIDC tokens with detailed claims
 - **📊 Enhanced Dashboard** - Real-time application portfolio metrics and insights
