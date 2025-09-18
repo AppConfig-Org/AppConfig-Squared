@@ -179,11 +179,11 @@ flowchart LR
 - Security and permission analysis
 
 ### Quick Start
-1. **Request Access** at [AppConfig² Website](https://appconfigapp.toncheetah.com/)
-2. **Choose your tool** based on organizational requirements
-3. **Sign in** with your Entra ID credentials
-4. **Explore** the enhanced dashboard and portfolio insights
-5. **Start testing** with comprehensive toolkit
+1. Get the AppConfig² Suite on Azure Marketplace: https://azuremarketplace.microsoft.com/en-us/marketplace/apps?search=AppConfig%C2%B2&page=1
+2. Choose your tool based on organizational requirements
+3. Sign in with your Entra ID credentials
+4. Explore the enhanced dashboard and portfolio insights
+5. Start testing with comprehensive toolkit
 
 ### Early Access Program 🎉
 The complete **AppConfig² Suite** is currently in **Early Access**:
@@ -192,8 +192,6 @@ The complete **AppConfig² Suite** is currently in **Early Access**:
 - ✅ Advanced security and lifecycle analysis
 - ✅ Priority support and direct feedback channel
 - ✅ Influence future development of the suite
-
-[**Request Early Access →**](https://forms.office.com/Pages/ResponsePage.aspx?id=KpDK7BEFckufqeOwyvweCVTykKo0P21GpY7N2jlgh7xUNFExRVRDSVoxTlMxNVM3V0dFUkUyTDQ5UC4u)
 
 ---
 
@@ -249,6 +247,19 @@ We welcome contributions from the community! Whether you're reporting bugs, sugg
 - 💡 **Suggest Features** - Share ideas for new functionality in either tool
 - 📖 **Improve Documentation** - Help make our comprehensive docs better
 - 🧪 **Beta Testing** - Join our early access program for the complete suite
+
+---
+
+## 🛒 Azure Marketplace Availability
+
+Now available on Azure Marketplace:
+- 1-month free trial of the full AppConfig² Suite
+- Azure-native billing and subscription management
+- Enterprise-ready security and compliance
+- Professional technical support
+
+Get it on Azure Marketplace:
+https://azuremarketplace.microsoft.com/en-us/marketplace/apps?search=AppConfig%C2%B2&page=1
 
 ---
 
