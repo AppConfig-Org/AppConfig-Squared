@@ -37,7 +37,7 @@ graph TB
 
 ### 2. Microsoft-Native Integration
 - **Native Entra ID Authentication** - Uses your existing Microsoft identity
-- **Microsoft Graph API** - Direct integration with Microsoft's secure APIs
+- **Microsoft Graph API** - Direct integration using secure HTTP calls
 - **Azure-Ready** - Designed for Azure-native deployment and scaling
 - **Enterprise Compliance** - Meets Microsoft's enterprise security standards
 
@@ -73,8 +73,6 @@ graph TB
 ### Compliance & Governance
 - **Azure Marketplace** - Enterprise-ready deployment and billing
 - **SOC 2 Aligned** - Follows Microsoft's security and compliance standards
-- **Audit Logging** - Comprehensive logging for compliance requirements
-- **Change Tracking** - Complete audit trail of all configuration changes
 
 ### Tool Differentiation
 - **AppConfig** - Full management capabilities with automatic backup protection
@@ -85,16 +83,16 @@ graph TB
 ## 🌐 Technology Stack
 
 ### Core Technologies
-| Component | Technology | Purpose |
-|-----------|------------|---------|
-| **Frontend** | React 18+ with TypeScript | Modern, type-safe user interface |
-| **Authentication** | Microsoft MSAL 2.0 | Secure Microsoft identity integration |
-| **API Integration** | Microsoft Graph SDK | Native Microsoft API connectivity |
-| **UI Framework** | Material-UI | Consistent, accessible design system |
+| Component        | Technology                       | Purpose                                 |
+|------------------|----------------------------------|-----------------------------------------|
+| **Frontend**     | React 18+ with TypeScript        | Modern, type-safe user interface        |
+| **Authentication** | Microsoft MSAL 2.0             | Secure Microsoft identity integration   |
+| **API Integration** | Direct HTTP calls to Microsoft Graph API | Secure, flexible Microsoft API connectivity |
+| **UI Framework** | Material-UI                      | Consistent, accessible design system    |
 
 ### Microsoft Integration
 - **Microsoft Entra ID** - Native identity and access management
-- **Microsoft Graph API** - Secure, comprehensive Microsoft 365 integration
+- **Microsoft Graph API** - Secure, comprehensive Microsoft 365 integration via direct HTTP
 - **Azure Deployment** - Cloud-native deployment and scaling
 - **Microsoft Support** - Enterprise-grade Microsoft ecosystem support
 
