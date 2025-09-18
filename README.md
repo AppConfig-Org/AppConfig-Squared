@@ -179,7 +179,7 @@ flowchart LR
 - Security and permission analysis
 
 ### Quick Start
-1. Get the AppConfig² Suite on Azure Marketplace: https://azuremarketplace.microsoft.com/en-us/marketplace/apps?search=AppConfig%C2%B2&page=1
+1. Get the AppConfig² Suite on Azure Marketplace: <a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps?search=AppConfig%C2%B2&page=1" target="_blank" rel="noopener noreferrer">Open Azure Marketplace</a>
 2. Choose your tool based on organizational requirements
 3. Sign in with your Entra ID credentials
 4. Explore the enhanced dashboard and portfolio insights
@@ -247,7 +247,7 @@ Now available on Azure Marketplace:
 - Professional technical support
 
 Get it on Azure Marketplace:
-https://azuremarketplace.microsoft.com/en-us/marketplace/apps?search=AppConfig%C2%B2&page=1
+<a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps?search=AppConfig%C2%B2&page=1" target="_blank" rel="noopener noreferrer">Open Azure Marketplace</a>
 
 ---
 
@@ -274,11 +274,11 @@ This project is proprietary software. All rights reserved. See [LICENSE](./LICEN
 ---
 
 <div align="center">
-  <a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps?search=AppConfig%C2%B2&page=1" target="_blank" rel="noopener noreferrer" title="Open Azure Marketplace in a new tab">
-    <h3>🚀 Get it on Azure Marketplace</h3>
+  <h3>🚀 Get it on Azure Marketplace</h3>
+  <p>Deploy AppConfig² Suite with Azure-native billing and compliance.</p>
+  <a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps?search=AppConfig%C2%B2&page=1" target="_blank" rel="noopener noreferrer">
     <img src="https://img.shields.io/badge/Get%20it%20on-Azure%20Marketplace-0078D4?style=for-the-badge&logo=microsoft-azure" alt="Get it on Azure Marketplace"/>
   </a>
-  <p>Deploy AppConfig² Suite with Azure-native billing and compliance.</p>
 </div>
 
 ---
