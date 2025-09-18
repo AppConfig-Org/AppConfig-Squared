@@ -1,6 +1,6 @@
 # AppConfig² Suite Features Guide
 
-This comprehensive guide covers all features available in the AppConfig² Suite, organized by tool and functionality.
+This comprehensive guide covers features available in the AppConfig² Suite, organized by tool and functionality.
 
 ## 🏠 Suite Overview & Navigation
 
@@ -15,7 +15,6 @@ This comprehensive guide covers all features available in the AppConfig² Suite,
 - **Multi-View Dashboard** - Switch between portfolio overview and detailed application views
 - **Advanced Filtering** - Filter applications by type, security posture, ownership, and tenant type
 - **Quick Actions** - Contextual actions available directly from dashboard cards
-- **Real-Time Data** - Live application counts and status updates with optimized caching
 
 ## 🔧 AppConfig - Full Management Tool
 
@@ -31,6 +30,8 @@ This comprehensive guide covers all features available in the AppConfig² Suite,
 ### Advanced Configuration Features
 - **App Roles Management** - Dynamic role creation with permission mapping
 - **API Permissions** - Interactive Microsoft Graph permission picker
+- **API Exposure Management** - Configure and manage exposed APIs, scopes, and permissions for your applications
+- **Optional Claims Management** - Add and manage optional claims for tokens to customize app authentication and authorization
 - **Claims Mapping Policies** - Visual policy editor with template library
 - **Directory Extensions** - Custom attribute creation and schema management
 - **Manifest Editor** - Direct application manifest editing with validation
