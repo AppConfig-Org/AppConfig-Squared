@@ -52,7 +52,7 @@ A specialized tool for organizations requiring configuration changes through off
 
 ### 🔧 AppConfig - Full Management Capabilities
 - **📝 Complete App Lifecycle** - Create, configure, and manage applications end-to-end
-- **🔄 Automatic Backups & Restore** - Every change backed up with one-click restoration
+- **🔄 Automatic Backups & Restore** - Tested application silently backed up with one-click restoration
 - **👥 User Provisioning** - Provision and deprovision users with role assignments
 - **🏷️ Dynamic App Roles** - Create and manage application roles with permissions
 - **🗺️ Claims Mapping Policies** - Create, edit, and assign claims mapping policies
