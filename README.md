@@ -253,10 +253,9 @@ https://azuremarketplace.microsoft.com/en-us/marketplace/apps?search=AppConfig%C
 
 ## 📞 Support & Community
 
-- **🌐 Website**: [appconfigapp.toncheetah.com](https://appconfigapp.toncheetah.com/)
+- **🌐 Website**: [www.configsquared.com](https://www.configsquared.com/)
 - **💼 LinkedIn**: [AppConfig² Company Page](https://www.linkedin.com/company/appconfig-square/)
 - **📧 Email**: [support@AppConfig.app](mailto:support@AppConfig.app)
-- **📋 Early Access**: [Request Access Form](https://forms.office.com/Pages/ResponsePage.aspx?id=KpDK7BEFckufqeOwyvweCVTykKo0P21GpY7N2jlgh7xUNFExRVRDSVoxTlMxNVM3V0dFUkUyTDQ5UC4u)
 
 ---
 
