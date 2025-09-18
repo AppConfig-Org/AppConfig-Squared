@@ -276,8 +276,9 @@ This project is proprietary software. All rights reserved. See [LICENSE](./LICEN
 <div align="center">
   <h3>🚀 Get it on Azure Marketplace</h3>
   <p>Deploy AppConfig² Suite with Azure-native billing and compliance.</p>
-  <a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps?search=AppConfig%C2%B2&page=1">
+  <a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps?search=AppConfig%C2%B2&page=1" target="_blank" rel="noopener noreferrer">
     <img src="https://img.shields.io/badge/Get%20it%20on-Azure%20Marketplace-0078D4?style=for-the-badge&logo=microsoft-azure" alt="Get it on Azure Marketplace"/>
+  </a>
   </a>
 </div>
 
