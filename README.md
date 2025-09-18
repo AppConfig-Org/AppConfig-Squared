@@ -83,7 +83,7 @@ A specialized tool for organizations requiring configuration changes through off
 <div align="center">
 
 ### Enhanced Dashboard with Portfolio Overview
-<img src="https://appconfigapp.toncheetah.com/images/Home.png" alt="Enhanced Dashboard" width="600"/>
+<img src="https://www.configsquared.com/images/Home.png" alt="Enhanced Dashboard" width="600"/>
 
 ### Advanced Security Analysis
 <img src="https://appconfigapp.toncheetah.com/images/SecurityAnalyzer.png" alt="Security Analysis" width="600"/>
