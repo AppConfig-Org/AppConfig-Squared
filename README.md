@@ -9,15 +9,14 @@
 
 ## 🚀 What is AppConfig² Suite?
 
-AppConfig² is a specialized application management suite designed specifically for Microsoft Entra ID application configuration, testing, and troubleshooting. The suite features two complementary tools that help developers, IT administrators, and support teams manage Entra ID application registrations more effectively while meeting different organizational compliance requirements.
+AppConfig² is a specialized application management suite designed specifically for Microsoft Entra ID application configuration, testing, and troubleshooting. The suite features two specialized tools designed for different organizational needs and compliance requirements. Both tools provide powerful Microsoft Entra ID capabilities while serving distinct use cases.
 
-Both tools focus exclusively on **application lifecycle management** - from initial registration and configuration to ongoing testing, troubleshooting, and maintenance of your Entra ID applications.
+### 🔧 AppConfig - Full Configuration Management
+The complete solution for developers, IT administrators, and security professionals who need full control over application configurations with comprehensive backup and restore capabilities.
 
-### 🔧 AppConfig - Full Application Management
-The complete solution for developers, IT administrators, and security professionals who need full control over Entra ID application configurations, including creation, modification, backup, and restore capabilities.
+### 🔍 AppTesting - Read-Only Analysis & Testing
+A specialized tool for organizations requiring configuration changes through official Entra portal only, while maintaining powerful troubleshooting and analysis capabilities.
 
-### 🔍 AppTesting - Read-Only Application Analysis
-A specialized tool for organizations requiring application configuration changes through official Entra portal only, while providing comprehensive application testing, analysis, and troubleshooting capabilities without modification risks.
 ---
 
 ## 🎯 Who Is This Suite For?
