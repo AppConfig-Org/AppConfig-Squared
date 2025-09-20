@@ -29,8 +29,7 @@ graph TB
     end
     
     subgraph "Microsoft Cloud"
-        F --> M[Microsoft Graph API]
-        M --> N[Your Entra Applications]
+        M[Microsoft Graph API] --> N[Your Entra Applications]
         M --> O[User Directory]
     end
     
@@ -40,6 +39,8 @@ graph TB
     end
     
     D --> G
+    F --> M
+    F --> G
     A --> M
     
     style A fill:#e1f5fe
