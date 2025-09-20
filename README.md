@@ -2,21 +2,22 @@
 
 <div align="center">
   <img src="https://appconfigapp.toncheetah.com/images/logo-nobackground-5000-orange-grad-wheel.png" alt="AppConfig² Logo" width="200"/>
-  <p><strong>Complete Identity and Access Management Suite for Microsoft Entra™</strong></p>
+  <p><strong>Complete Application Management Suite for Microsoft Entra™ Applications</strong></p>
 </div>
 
 ---
 
 ## 🚀 What is AppConfig² Suite?
 
-AppConfig² is a comprehensive Identity and Access Management suite featuring two specialized tools designed for different organizational needs and compliance requirements. Both tools provide powerful Microsoft Entra ID (formerly Azure AD) capabilities while serving distinct use cases.
+AppConfig² is a specialized application management suite designed specifically for Microsoft Entra ID application configuration, testing, and troubleshooting. The suite features two complementary tools that help developers, IT administrators, and support teams manage Entra ID application registrations more effectively while meeting different organizational compliance requirements.
 
-### 🔧 AppConfig - Full Configuration Management
-The complete solution for developers, IT administrators, and security professionals who need full control over application configurations with comprehensive backup and restore capabilities.
+Both tools focus exclusively on **application lifecycle management** - from initial registration and configuration to ongoing testing, troubleshooting, and maintenance of your Entra ID applications.
 
-### 🔍 AppTesting - Read-Only Analysis & Testing
-A specialized tool for organizations requiring configuration changes through official Entra portal only, while maintaining powerful troubleshooting and analysis capabilities.
+### 🔧 AppConfig - Full Application Management
+The complete solution for developers, IT administrators, and security professionals who need full control over Entra ID application configurations, including creation, modification, backup, and restore capabilities.
 
+### 🔍 AppTesting - Read-Only Application Analysis
+A specialized tool for organizations requiring application configuration changes through official Entra portal only, while providing comprehensive application testing, analysis, and troubleshooting capabilities without modification risks.
 ---
 
 ## 🎯 Who Is This Suite For?
