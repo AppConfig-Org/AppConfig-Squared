@@ -88,7 +88,7 @@ graph TB
 |------------------|----------------------------------|-----------------------------------------|
 | **Frontend**     | React 18+ with TypeScript        | Modern, type-safe user interface        |
 | **Authentication** | Microsoft MSAL 2.0             | Secure Microsoft identity integration   |
-| **API Integration** | Direct HTTP calls to Microsoft Graph API | Secure, flexible Microsoft API connectivity |
+| **API Integration** | Direct HTTP calls to MS Graph API | Secure, flexible Microsoft API connectivity |
 | **UI Framework** | Material-UI                      | Consistent, accessible design system    |
 | **Backend Functions** | Azure Functions (Node.js/TypeScript) | Serverless backend for client credentials flow and marketplace integration |
 | **Hosting Platform** | Azure Static Web Apps          | Secure, scalable, globally distributed frontend hosting |
