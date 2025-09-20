@@ -43,8 +43,10 @@ graph TB
 
 ### 3. Modern Web Technology
 - **Single Page Application** - Fast, responsive user experience
-- **Mobile Responsive** - Works seamlessly across devices
+- **Component-Based Architecture** - Modular, maintainable React components using Material UI
+- **TypeScript Integration** - Type-safe development with enhanced code quality
 - **Progressive Enhancement** - Features load based on your permissions
+- **Azure Static Web Apps Hosting** - Secure, scalable, and globally distributed frontend hosting
 
 ## 🔐 Security Architecture
 
