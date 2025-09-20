@@ -11,20 +11,42 @@ graph TB
         A --> C[Modern UI Components]
     end
     
+    subgraph "Azure Static Web Apps"
+        A --> D[Static Web App Hosting]
+    end
+    
     subgraph "Authentication"
-        B --> D[Microsoft Entra ID]
-        D --> E[Secure Access Tokens]
+        B --> E[Microsoft Entra ID]
+        E --> F[Secure Access Tokens]
+    end
+    
+    subgraph "Serverless Backend"
+        G[Azure Functions] --> H[Marketplace Landing]
+        G --> I[Marketplace Webhook]
+        G --> J[Token Management]
+        K[Cosmos DB] --> L[Allowlist Store]
+        G --> K
     end
     
     subgraph "Microsoft Cloud"
-        E --> F[Microsoft Graph API]
-        F --> G[Your Entra Applications]
-        F --> H[User Directory]
+        F --> M[Microsoft Graph API]
+        M --> N[Your Entra Applications]
+        M --> O[User Directory]
     end
     
+    subgraph "Azure Marketplace"
+        P[Marketplace Portal] --> H
+        P --> I
+    end
+    
+    D --> G
+    A --> M
+    
     style A fill:#e1f5fe
-    style D fill:#f3e5f5
-    style F fill:#e8f5e8
+    style E fill:#f3e5f5
+    style M fill:#e8f5e8
+    style G fill:#fff3e0
+    style K fill:#e8f5e8
 ```
 
 ## 🎯 Core Design Principles
