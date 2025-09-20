@@ -48,7 +48,7 @@ A specialized tool for organizations requiring configuration changes through off
 
 ---
 
-## ⭐ Core Suite Features
+## ⭐ AppConfig² Suite Features
 
 ### 🌟 Core Capabilities (Both Tools)
 - **🎫 Authentication Flow Testing** - Test various flows and inspect token responses
