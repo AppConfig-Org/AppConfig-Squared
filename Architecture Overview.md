@@ -90,6 +90,24 @@ graph TB
 | **Authentication** | Microsoft MSAL 2.0             | Secure Microsoft identity integration   |
 | **API Integration** | Direct HTTP calls to Microsoft Graph API | Secure, flexible Microsoft API connectivity |
 | **UI Framework** | Material-UI                      | Consistent, accessible design system    |
+| **Backend Functions** | Azure Functions (Node.js/TypeScript) | Serverless backend for client credentials flow and marketplace integration |
+| **Hosting Platform** | Azure Static Web Apps          | Secure, scalable, globally distributed frontend hosting |
+
+### Azure Marketplace Integration
+AppConfig² includes comprehensive Azure Marketplace SaaS integration:
+
+| Component | Purpose | Implementation |
+|-----------|---------|----------------|
+| **Marketplace Landing** | Subscription activation and token resolution | Azure Function with marketplace API integration |
+| **Marketplace Webhook** | Handle subscription lifecycle events | Azure Function processing subscribe/unsubscribe/changePlan events |
+| **Billing Integration** | Azure-native subscription management | Integrated with Azure subscription billing |
+| **Token Management** | Client credentials flow for backend operations | Azure Functions handling authentication flows |
+
+### Backend Functions Detail
+- **`get-token`** - Authentication token management for client credentials flow
+- **`marketplace-landing`** - Subscription activation from Azure Marketplace
+- **`marketplace-webhook`** - Marketplace event processing (subscribe, unsubscribe, suspend)
+- **Serverless Architecture** - Auto-scaling, pay-per-use, zero idle costs
 
 ### Microsoft Integration
 - **Microsoft Entra ID** - Native identity and access management
