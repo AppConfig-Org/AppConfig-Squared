@@ -253,9 +253,9 @@ Get it on Azure Marketplace:
 
 ## 📞 Support & Community
 
-- **🌐 Website**: [www.configsquared.com](https://www.configsquared.com/)
+- **🌐 Website**: [www.appconfig.eu](https://www.appconfig.eu/)
 - **💼 LinkedIn**: [AppConfig² Company Page](https://www.linkedin.com/company/appconfig-square/)
-- **📧 Email**: [support@AppConfig.app](mailto:support@AppConfig.app)
+- **📧 Email**: [support@appconfig.app](mailto:support@appconfig.app)
 
 ---
 
