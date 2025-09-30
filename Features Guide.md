@@ -31,6 +31,13 @@ This guide covers features available in the AppConfig² Suite, organized by tool
 - Request Templates - Pre-built queries for common scenarios
 - Batch Operations - Execute Graph API calls efficiently (limited to GET method in AppTesting)
 
+### Suite Tools (Available in Both Tools)
+- Token Scope Requester - Request tokens for Graph or custom APIs with /.default, consent, and tenant authority controls.
+- Raw OAuth Tester - Run implicit flow without MSAL, generate authorize URLs, validate state/nonce, and inspect tokens.
+- OData Query Builder - Build Graph OData queries visually, paginate, and export JSON.
+- Secrets & Certificate Expiration Monitor - Surface expiring/expired secrets and certs (apps/SPs), filter by risk level, and export CSV.
+
+
 ## 🔧 AppConfig - Full Management Tool
 
 ### Complete Application Lifecycle Management
@@ -50,12 +57,6 @@ This guide covers features available in the AppConfig² Suite, organized by tool
 - Claims Mapping Policies - Visual policy editor with template library
 - Directory Extensions - Custom attribute creation and schema management
 - Manifest Editor - Direct application manifest editing with validation
-
-### AppConfig Tools (New)
-- Token Scope Requester - Request tokens for Graph or custom APIs with /.default, consent, and tenant authority controls; includes quick GET tester.
-- Raw OAuth Tester - Run implicit flow without MSAL, generate authorize URLs, validate state/nonce, and inspect tokens.
-- OData Query Builder - Build Graph OData queries visually, paginate, and export JSON.
-- Secrets & Certificate Expiration Monitor - Surface expiring/expired secrets and certs (apps/SPs), filter by risk level, and export CSV.
 
 ## 🔍 AppTesting - Read-Only Analysis Tool
 

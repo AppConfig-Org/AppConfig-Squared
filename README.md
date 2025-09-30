@@ -50,7 +50,7 @@ A specialized tool for organizations requiring configuration changes through off
 
 ## ⭐ AppConfig² Suite Features
 
-### 🌟 Core Capabilities (Both Tools)
+### 🌟 Core Capabilities (Both Apps)
 - **🎫 Authentication Flow Testing** - Test various flows and inspect token responses
 - **🔓 Advanced Token Analysis** - Decode and analyze OAuth/OIDC tokens with detailed claims
 - **📊 Enhanced Dashboard** - Real-time application portfolio metrics and insights
@@ -59,6 +59,7 @@ A specialized tool for organizations requiring configuration changes through off
 - **🔄 Application Lifecycle Tracking** - Monitor creation, ownership, and change history
 - **🌐 Embedded Graph Explorer** - Deep dive analysis using Microsoft Graph API
 - **📋 Conditional Access Analysis** - View applied policies and their authentication impact
+- **🧰 Built-in Suite Tools** — Token Scope Requester, Raw OAuth Tester, OData Query Builder, Secrets & Certificate Expiration Monitor
 
 ### 🔧 AppConfig - Full Management Capabilities
 - **📝 Complete App Lifecycle** - Create, configure, and manage applications end-to-end
@@ -68,12 +69,6 @@ A specialized tool for organizations requiring configuration changes through off
 - **🗺️ Claims Mapping Policies** - Create, edit, and assign claims mapping policies
 - **📦 Directory Extensions** - Manage custom directory extensions and attributes
 - **🔑 Credential Management** - Generate and manage client secrets and certificates
-
-#### 🧰 AppConfig Tools (New)
-- **Token Scope Requester** — Compose and request tokens for Microsoft Graph or custom APIs; supports /.default, tenant authority, consent, and quick GET testing.
-- **Raw OAuth Tester** — Build and run legacy OAuth 2.0 implicit authorization requests (no MSAL), validate state/nonce, and decode tokens.
-- **OData Query Builder** — Visually build Graph queries ($select, $filter, $orderby, $top/$count), fetch all pages, and export JSON.
-- **Secrets & Certificate Expiration Monitor** — Find expiring/expired app secrets and certs (apps and optional SPs), filter by risk, and export CSV.
 
 ### 🔍 AppTesting - Read-Only Analysis
 - **✅ All Testing Capabilities** - Complete authentication flow testing without modifications
