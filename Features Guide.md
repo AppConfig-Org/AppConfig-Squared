@@ -51,6 +51,12 @@ This guide covers features available in the AppConfig² Suite, organized by tool
 - Directory Extensions - Custom attribute creation and schema management
 - Manifest Editor - Direct application manifest editing with validation
 
+### AppConfig Tools (New)
+- Token Scope Requester - Request tokens for Graph or custom APIs with /.default, consent, and tenant authority controls; includes quick GET tester.
+- Raw OAuth Tester - Run implicit flow without MSAL, generate authorize URLs, validate state/nonce, and inspect tokens.
+- OData Query Builder - Build Graph OData queries visually, paginate, and export JSON.
+- Secrets & Certificate Expiration Monitor - Surface expiring/expired secrets and certs (apps/SPs), filter by risk level, and export CSV.
+
 ## 🔍 AppTesting - Read-Only Analysis Tool
 
 ### Comprehensive Testing Without Changes

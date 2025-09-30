@@ -69,6 +69,12 @@ A specialized tool for organizations requiring configuration changes through off
 - **📦 Directory Extensions** - Manage custom directory extensions and attributes
 - **🔑 Credential Management** - Generate and manage client secrets and certificates
 
+#### 🧰 AppConfig Tools (New)
+- **Token Scope Requester** — Compose and request tokens for Microsoft Graph or custom APIs; supports /.default, tenant authority, consent, and quick GET testing.
+- **Raw OAuth Tester** — Build and run legacy OAuth 2.0 implicit authorization requests (no MSAL), validate state/nonce, and decode tokens.
+- **OData Query Builder** — Visually build Graph queries ($select, $filter, $orderby, $top/$count), fetch all pages, and export JSON.
+- **Secrets & Certificate Expiration Monitor** — Find expiring/expired app secrets and certs (apps and optional SPs), filter by risk, and export CSV.
+
 ### 🔍 AppTesting - Read-Only Analysis
 - **✅ All Testing Capabilities** - Complete authentication flow testing without modifications
 - **🛡️ Compliance Ready** - Meets strict organizational change control policies
