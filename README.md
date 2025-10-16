@@ -50,7 +50,7 @@ A specialized tool for organizations requiring configuration changes through off
 
 ## ⭐ AppConfig² Suite Features
 
-### 🌟 Core Capabilities (Both Apps)
+### 🌟 Core Capabilities (Both Tools)
 - **🎫 Authentication Flow Testing** - Test various flows and inspect token responses
 - **🔓 Advanced Token Analysis** - Decode and analyze OAuth/OIDC tokens with detailed claims
 - **📊 Enhanced Dashboard** - Real-time application portfolio metrics and insights
@@ -59,7 +59,15 @@ A specialized tool for organizations requiring configuration changes through off
 - **🔄 Application Lifecycle Tracking** - Monitor creation, ownership, and change history
 - **🌐 Embedded Graph Explorer** - Deep dive analysis using Microsoft Graph API
 - **📋 Conditional Access Analysis** - View applied policies and their authentication impact
-- **🧰 Built-in Suite Tools** — Token Scope Requester, Raw OAuth Tester, OData Query Builder, Secrets & Certificate Expiration Monitor
+
+#### 🧰 Built-in Suite Tools (Available in Both Apps)
+- **Token Scope Requester** - Request tokens for Graph or custom APIs with /.default, consent, and tenant authority controls; includes quick GET tester
+- **Raw OAuth Tester** - Run implicit flow without MSAL, generate authorize URLs, validate state/nonce, and inspect tokens
+- **OData Query Builder** - Build Graph OData queries visually, paginate, and export JSON
+- **Secrets & Certificate Expiration Monitor** - Surface expiring/expired secrets and certs (apps/SPs), filter by risk level, and export CSV
+- **Entra Endpoints Explorer** - Comprehensive reference of Microsoft Entra ID endpoints across clouds (public, government, China, Germany) with variable substitution
+- **MSAL Trace Viewer** - Real-time visibility into MSAL.js authentication events with correlation tracking, test actions, and detailed event inspection
+- **OIDC Metadata Inspector** - Inspect OpenID Connect discovery documents, JWKS, validate JWT signatures, and analyze token claims across different authorities
 
 ### 🔧 AppConfig - Full Management Capabilities
 - **📝 Complete App Lifecycle** - Create, configure, and manage applications end-to-end

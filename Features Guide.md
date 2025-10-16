@@ -2,7 +2,7 @@
 
 This guide covers features available in the AppConfig² Suite, organized by tool and functionality.
 
-## 🌟 Core Capabilities (Both Tools)
+## 🌟 Core Capabilities (Both Apps)
 
 ### Enhanced Portfolio Dashboard
 - Application Portfolio Overview - Comprehensive view of all applications with key metrics
@@ -31,11 +31,14 @@ This guide covers features available in the AppConfig² Suite, organized by tool
 - Request Templates - Pre-built queries for common scenarios
 - Batch Operations - Execute Graph API calls efficiently (limited to GET method in AppTesting)
 
-### Suite Tools (Available in Both Tools)
-- Token Scope Requester - Request tokens for Graph or custom APIs with /.default, consent, and tenant authority controls.
-- Raw OAuth Tester - Run implicit flow without MSAL, generate authorize URLs, validate state/nonce, and inspect tokens.
-- OData Query Builder - Build Graph OData queries visually, paginate, and export JSON.
-- Secrets & Certificate Expiration Monitor - Surface expiring/expired secrets and certs (apps/SPs), filter by risk level, and export CSV.
+### Suite Tools (Available in Both Apps)
+- **Token Scope Requester** - Request tokens for Graph or custom APIs with /.default, consent, and tenant authority controls; includes quick GET tester
+- **Raw OAuth Tester** - Run implicit flow without MSAL, generate authorize URLs, validate state/nonce, and inspect tokens
+- **OData Query Builder** - Build Graph OData queries visually, paginate, and export JSON
+- **Secrets & Certificate Expiration Monitor** - Surface expiring/expired secrets and certs (apps/SPs), filter by risk level, and export CSV
+- **Entra Endpoints Explorer** - Comprehensive reference guide for Microsoft Entra ID endpoints across all Azure clouds with multi-cloud support, variable substitution, categorized endpoints (OAuth 2.0/OIDC, Graph, Azure Management, B2C, SAML), one-click copying, and direct links to Microsoft documentation
+- **MSAL Trace Viewer** - Real-time MSAL.js authentication event monitoring and debugging with live event capture grouped by correlation ID, built-in test actions, interaction type filtering, PII redaction toggle, JSON export, and detailed event payload inspection
+- **OIDC Metadata Inspector** - OpenID Connect discovery and JWT validation tool with support for fetching and analyzing OIDC discovery documents, JWKS inspection, JWT decoding with automatic token type detection, signature verification, and key matching.
 
 
 ## 🔧 AppConfig - Full Management Tool
